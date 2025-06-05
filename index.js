@@ -8,7 +8,7 @@ const image = document.getElementById('image')
 
 
 // Change document background color to silver
- document.body.style.backgroundColor = 'Silver'
+ document.body.style.backgroundColor = 'Silver';
 
 // Change the font color for h1 title tag to green
 title.style.color = 'Green';
@@ -17,7 +17,8 @@ title.style.color = 'Green';
 const h3tags = document.getElementsByTagName('h3')
 for(let i=0; i<h3tags.length; i++){
     h3tags[i].style.textTransform='uppercase'
-}
+};
+title.style.fontSize = '2cm'
 
 // Add one more fruit to the fruits list
 
@@ -34,16 +35,16 @@ vegetableList.appendChild(newVegLi);
 newVegLi.appendChild(liContent);
 
 const shopImage = document.createElement('img')
-shopImage.src = 'images/shop.jpg';
-shopImage.width = 390
-shopImage.height = 600
+shopImage.src = 'images/shop2.jpg';
+shopImage.width = 800
+shopImage.height = 700
 shopImage.alt = 'Welcome to mama Mboga '
 image.appendChild(shopImage)
 
 
 const orders = document.getElementById('orders');
 const newHeading = document.createElement('H1');
-newHeading.textContent = 'Make An Order';
+newHeading.textContent = 'Available Fruits';
 orders.appendChild(newHeading);
 
 newHeading.style.color = 'green'
@@ -64,13 +65,15 @@ fruitPineapple.src = 'images/pineapple.jpg';
 fruitPineapple.width = 290
 fruitPineapple.height = 300
 
-
-fruits.appendChild(fruitBanana)
-fruits.appendChild(fruitMango)
-fruits.appendChild(fruitPineapple)
+fruits.appendChild(fruitBanana);
+fruits.appendChild(fruitMango);
+fruits.appendChild(fruitPineapple);
 
 fruits.style.display = 'flex';
-fruits.style.gap = '20px';
+fruits.style.gap = '80px';
+
+
+
 
 
 
